@@ -1,0 +1,71 @@
+{
+    "name": "start quest",
+    "scenes": [{
+        "id": 1,
+        "description": "Добро пожаловать, рейнджер!",
+        "image": "https://blabla.gpg",
+        "type": "start",
+        "transitions": [{
+            "maxTransitions": 20,
+            "target": 2,
+            "text": "ты переходишь на корабль...",
+            "isAvaible": true,
+            "isVisible": true
+        },
+        {
+            "maxTransitions": 5,
+            "target": 3,
+            "text": "ты переходишь на чердак...",
+            "isAvaible": true,
+            "isVisible": true
+        }]
+    },
+    {
+        "id": 2,
+        "description": "Сцена с кораблем!",
+        "image": "https://muholet.gpg",
+        "type": "intermediate",
+        "transitions": [{
+            "maxTransitions": 5,
+            "target": 3,
+            "text": "ты переходишь, на чердак",
+            "isAvaible": true,
+            "isVisible": true
+        },
+        {
+            "maxTransitions": 5,
+            "target": 4,
+            "text": "ты переходишь....конец",
+            "isAvaible": true,
+            "isVisible": true
+        }]
+    },
+    {
+        "id": 3,
+        "description": "Сцена с чердаком!",
+        "image": "https://muholet.gpg",
+        "type": "intermediate",
+        "transitions": [{
+            "maxTransitions": 5,
+            "target": 4,
+            "text": "побег....",
+            "isAvaible": true,
+            "isVisible": true
+        },
+        {
+            "maxTransitions": 5,
+            "target": 2,
+            "text": "по этапу...",
+            "isAvaible": true,
+            "isVisible": true
+        }]
+    },
+    {
+        "id": 4,
+        "description": "Конец",
+        "image": "https://muholet.gpg",
+        "type": "end",
+        "transitions": []
+    }
+]
+}
