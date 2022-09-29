@@ -1,17 +1,15 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { IS_PROD } from "../constants/env";
 import { AppReducer } from "../pages/app/state/reducer";
-
-const rootReducer = combineReducers({
-  foo: () => ({}), // remove it and connect your reducers
-});
+import { CanvasReducer } from "../features/canvas/state/reducer";
 
 const reducer = combineReducers({
   app: AppReducer,
+  canvas: CanvasReducer,
 });
 
 export const store = configureStore({
-  reducer: rootReducer,
+  reducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       immutableCheck: false,

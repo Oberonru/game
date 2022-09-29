@@ -4,7 +4,7 @@
 export type Transition = {
   priority?: number;
   maxTransitions: number;
-  target: number;
+  target: string;
   text: string;
   isAvaible: boolean;
   isVisible: boolean;
